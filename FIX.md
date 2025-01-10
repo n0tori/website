@@ -3,7 +3,6 @@
 	- fit featured image in container (maybe fixed?)
 	- multiple posts not showing ?
 - layout
-	- ==header and footer shifts to left when reading a post==
 	- figure out colour scheme
 	- make header more interesting
 	- place social icons someplace more important
