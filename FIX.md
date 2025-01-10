@@ -1,5 +1,6 @@
 - posts
-	- fit featured image in container (not fixed) (maybe hover to popup image)
+	- fit featured image in container (not fixed)
+		- maybe hover to popup image
 	- change layout of posts timeline
 	- markdown renderer no worky for some stuff, see test post
 - layout
