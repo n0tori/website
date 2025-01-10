@@ -2,9 +2,8 @@
 title: test multiple posts
 date: 2049-07-07
 last_updated: 2049-07-07
-featured_image: src/assets/images/istockphoto-1335081545-612x612.jpg
+featured_image: /assets/images/istockphoto-1335081545-612x612.jpg
 ---
-
 Every book has a skeleton hidden between its covers. Your job as an
 analytical reader is to find it.
 A book comes to you with flesh on its bare bones and clothes over its

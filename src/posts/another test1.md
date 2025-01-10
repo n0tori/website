@@ -2,9 +2,8 @@
 title: test multiple posts 1
 date: 2049-07-08
 last_updated: 2049-07-08
-featured_image: src/assets/images/istockphoto-1335081545-612x612.jpg
+featured_image: /assets/images/istockphoto-1335081545-612x612.jpg
 ---
-
 when high school enrollments increased greatly within a relatively short
 period, educators began to realize that it could no longer be assumed
 that entering students could read effectively. Remedial reading
