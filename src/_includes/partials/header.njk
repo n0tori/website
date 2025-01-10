@@ -1,18 +1,18 @@
 <header>
     <nav>
         <div class="nav-links">
-            <a href="/" class="site-title">Home</a>
-            <a href="/posts/" class="nav-link">Posts</a>
+            <a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
+            <a href="/posts/" class="nav-link {% if page.url == '/posts/' %}active{% endif %}">Posts</a>
         </div>
         <div class="social-icons">
             <a href="{{ site.social.github }}" target="_blank" rel="noopener">
-                <img src="/assets/images/github.png" alt="GitHub">
+                <img src="/assets/images/github.ico" alt="GitHub">
             </a>
             <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener">
-                <img src="/assets/images/linkedin.png" alt="LinkedIn">
+                <img src="/assets/images/linkedin.ico" alt="LinkedIn">
             </a>
             <a href="{{ site.social.lastfm }}" target="_blank" rel="noopener">
-                <img src="/assets/images/lastfm.png" alt="Last.fm">
+                <img src="/assets/images/lastfm.ico" alt="Last.fm">
             </a>
         </div>
     </nav>

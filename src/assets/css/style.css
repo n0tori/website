@@ -53,15 +53,38 @@ nav {
     margin: 0 auto;
 }
 
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
 .nav-link {
     text-decoration: none;
     color: #333;
 }
 
+.nav-link:active {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+}
+
 .social-icons img {
     width: 32px;
     height: 32px;
-    margin-left: 1rem;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1)
 }
 
 /* Posts grid */
