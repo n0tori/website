@@ -8,12 +8,14 @@
     <script src="/assets/js/main.js" defer></script>
 </head>
 <body>
-    {% include "partials/header.njk" %}
-    
-    <main>
-        {{ content | safe }}
-    </main>
-    
-    {% include "partials/footer.njk" %}
+    <div class="wrapper">
+        {% include "partials/header.njk" %}
+        
+        <main>
+            {{ content | safe }}
+        </main>
+
+        {% include "partials/footer.njk" %}
+    </div>
 </body>
 </html>
