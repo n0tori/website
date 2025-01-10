@@ -1,0 +1,12 @@
+- posts
+	- markdown renderer no worky for some stuff, see test post
+	- fit featured image in container
+- layout
+	- figure out colour scheme
+	- make header more interesting
+	- place social icons someplace more important
+- sections
+	- for links
+
+- extra
+	- seasonal themes to website at times of calendar festivities

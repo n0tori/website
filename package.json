@@ -1,0 +1,17 @@
+{
+    "name": "aryanmustafa",
+    "version": "1.0.0",
+    "description": "My portfolio :)",
+    "scripts": {
+        "start": "rm -rf _site && eleventy --serve",
+        "build": "rm -rf _site && eleventy"
+    },
+    "dependencies": {
+        "@11ty/eleventy": "^2.0.1",
+        "luxon": "^3.5.0"
+    },
+    "main": ".eleventy.js",
+    "keywords": [],
+    "author": "Aryan Mustafa",
+    "license": "ISC"
+}

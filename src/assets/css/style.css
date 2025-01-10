@@ -1,0 +1,101 @@
+/* Main */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    line-height: 1.6;
+    background: #fff;
+    color: #333;
+}
+
+/* Layout */
+header {
+    background: #f0f0f0;
+    padding: 1rem;
+    border-bottom: 2px solid #999;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f0f0f0;
+    border-top: 2px solid #999;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Navigation and icons */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    margin-left: 1rem;
+}
+
+/* Posts grid */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.post-card {
+    border: 1px solid #999;
+    padding: 1rem;
+}
+
+/* GIF container */
+.gif-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.retro-badge {
+    height: 31px;  /* Standard size for retro badges */
+    width: auto;
+}
+
+/* Post styles */
+.post .featured-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.post-meta {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.post-meta span:not(:last-child)::after {
+    content: "•";
+    margin: 0 0.5rem;
+}

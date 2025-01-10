@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+---
+<article class="post">
+    {% if featured_image %}
+    <img src="{{ featured_image }}" alt="{{ title }}" class="featured-image">
+    {% endif %}
+    
+    <h1>{{ title }}</h1>
+    
+    <div class="post-meta">
+        <span>Published: {{ page.date | readableDate }}</span>
+        {% if last_updated %}
+        <span>Last updated: {{ last_updated | readableDate }}</span>
+        {% endif %}
+        <span>{{ content | readingTime }} min read</span>
+    </div>
+    
+    {{ content | safe }}
+</article>

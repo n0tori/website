@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+title: Home
+---
+<section class="intro">
+    <h1>Welcome to my portfolio!</h1>
+    <p>{{ site.description }}</p>
+</section>
+
+<section class="gifs">
+    <h2>Cool Stuff</h2>
+    <div class="gif-container">
+        {% for gif in [] | getGifs %}
+            <img src="{{ gif }}" alt="Retro badge" class="retro-badge">
+        {% endfor %}
+    </div>
+</section>
