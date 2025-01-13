@@ -117,7 +117,7 @@ nav {
 }
 
 /* Posts grid */
-.posts-grid {
+/* .posts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
@@ -134,10 +134,10 @@ nav {
     height: 200px;
     object-fit: cover;
     margin-bottom: 1rem;
-}
+} */
 
 /* Post styles */
-.post .featured-image {
+/* .post .featured-image {
     max-width: 100%;
     max-height: 400px;
     object-fit: cover;
@@ -153,4 +153,100 @@ nav {
 .post-meta span:not(:last-child)::after {
     content: "•";
     margin: 0 0.5rem;
+} */
+
+/* Posts grid*/
+/* Add to src/assets/css/style.css */
+.explorer-window {
+    border: 2px solid #99B4D1;
+    background: #FFFFFF;
+    margin: 20px auto;
+    font-family: "Tahoma", sans-serif;
+    max-width: 1000px;
+    width: 95%;
+}
+
+.explorer-header {
+    background: linear-gradient(to right, #0054E3, #2787E9);
+    color: white;
+    padding: 8px 15px;
+}
+
+.explorer-header h1 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.explorer-toolbar {
+    background: #F1EFE2;
+    border-bottom: 1px solid #999;
+    padding: 8px 15px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    font-size: 14px;
+    color: #000;
+}
+
+.file-list {
+    padding: 8px 0;
+}
+
+.file-item {
+    display: grid;
+    grid-template-columns: 50px 3fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 4px 15px;
+    font-size: 14px;
+    min-height: 45px;
+}
+
+.file-item:hover {
+    background: #E8E8E8;
+}
+
+.file-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.file-thumbnail {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.image-preview {
+    display: none;
+    position: absolute;
+    left: 50px;
+    top: -60px;
+    z-index: 1000;
+    border: 2px solid #0054E3;
+    background: white;
+    padding: 8px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+
+.image-preview img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.file-icon:hover .image-preview {
+    display: block;
+}
+
+.file-name {
+    color: #000;
+    text-decoration: none;
+}
+
+.file-name:hover {
+    text-decoration: underline;
+}
+
+.file-date, .file-type, .file-size {
+    color: #666;
 }

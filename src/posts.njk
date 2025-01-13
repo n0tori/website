@@ -1,23 +1,36 @@
 ---
 layout: layouts/base.njk
-title: Blog Posts
+title: Posts
 permalink: /posts/
 ---
-<h1>Blog Posts</h1>
+<div class="explorer-window">
+    <div class="explorer-header">
+        <h1>Blog Posts</h1>
+    </div>
+    
+    <div class="explorer-toolbar">
+        <span>Name</span>
+        <span>Date modified</span>
+        <span>Type</span>
+        <span>Size</span>
+    </div>
 
-<div class="posts-grid">
-    {%- for post in collections.posts | reverse -%}
-    <article class="post-card">
-        {% if post.data.featured_image %}
-        <img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}">
-        {% endif %}
-        <h2>
-            <a href="{{ post.url }}">{{ post.data.title }}</a>
-        </h2>
-        <div class="post-meta">
-            <span>{{ post.date | readableDate }}</span>
-            <span>{{ post.templateContent | readingTime }} min read</span>
+    <div class="file-list">
+        {%- for post in collections.posts | reverse -%}
+        <div class="file-item">
+            <div class="file-icon">
+                {% if post.data.featured_image %}
+                <img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}" class="file-thumbnail">
+                <div class="image-preview">
+                    <img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}">
+                </div>
+                {% endif %}
+            </div>
+            <a href="{{ post.url }}" class="file-name">{{ post.data.title }}</a>
+            <span class="file-date">{{ post.date | readableDate }}</span>
+            <span class="file-type">Document</span>
+            <span class="file-size">{{ post.templateContent | readingTime }} min read</span>
         </div>
-    </article>
-    {%- endfor -%}
+        {%- endfor -%}
+    </div>
 </div>

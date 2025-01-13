@@ -10,4 +10,29 @@ document.addEventListener('DOMContentLoaded', () => {
             link.style.color = '';
         });
     });
+
+    const fileIcons = document.querySelectorAll('.file-icon');
+    
+    fileIcons.forEach(icon => {
+        icon.addEventListener('mouseenter', () => {
+            const preview = icon.querySelector('.image-preview');
+            if (preview) {
+                preview.style.opacity = '0';
+                preview.style.display = 'block';
+                setTimeout(() => {
+                    preview.style.opacity = '1';
+                }, 10);
+            }
+        });
+
+        icon.addEventListener('mouseleave', (e) => {
+            const preview = icon.querySelector('.image-preview');
+            if (preview) {
+                preview.style.opacity = '0';
+                setTimeout(() => {
+                    preview.style.display = 'none';
+                }, 200);
+            }
+        });
+    });
 });
