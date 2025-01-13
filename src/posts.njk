@@ -28,7 +28,13 @@ permalink: /posts/
             </div>
             <a href="{{ post.url }}" class="file-name">{{ post.data.title }}</a>
             <span class="file-date">{{ post.date | readableDate }}</span>
-            <span class="file-type">Document</span>
+            <span class="file-type">
+                {%- if post.data.tags -%}
+                    {{ post.data.tags | join(", ") }}
+                {%- else -%}
+                    Untagged
+                {%- endif -%}
+            </span>
             <span class="file-size">{{ post.templateContent | readingTime }} min read</span>
         </div>
         {%- endfor -%}

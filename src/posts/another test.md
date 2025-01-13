@@ -1,6 +1,11 @@
 ---
 title: test multiple posts
 date: 2049-07-07
+tags:
+    - books
+    - literature
+    - reading
+    - essay
 last_updated: 2049-07-07
 featured_image: /assets/images/istockphoto-1335081545-612x612.jpg
 ---

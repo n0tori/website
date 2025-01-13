@@ -1,6 +1,11 @@
 ---
 title: My First Post
 date: 2049-07-06
+tags:
+    - java
+    - computer science
+    - maths
+    - writeup
 last_updated: 2049-07-06
 featured_image: /assets/images/33240633.png
 ---

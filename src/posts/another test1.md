@@ -1,6 +1,10 @@
 ---
 title: test multiple posts 1
 date: 2049-07-08
+tags:
+    - essay
+    - philosophy
+    - psychology
 last_updated: 2049-07-08
 featured_image: /assets/images/istockphoto-1335081545-612x612.jpg
 ---
