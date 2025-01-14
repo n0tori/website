@@ -154,10 +154,12 @@ nav {
     padding: 4px 15px;
     font-size: 14px;
     min-height: 45px;
+    border: 2px dotted transparent;
 }
 
 .file-item:hover {
-    background: #E8E8E8;
+    background: #f5f5f5;
+    border-color: hotpink;
 }
 
 .file-icon {
