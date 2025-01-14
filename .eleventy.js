@@ -21,6 +21,10 @@ module.exports = function(eleventyConfig) {
             .filter(file => file.toLowerCase().endsWith('.gif'))
             .map(file => `/assets/retro-badges/${file}`);
     });
+
+    eleventyConfig.addCollection("posts", function(collectionApi) {
+        return collectionApi.getFilteredByGlob("src/posts/*.md");
+    });
     
     return {
         dir: {
