@@ -7,7 +7,7 @@ tags:
     - reading
     - essay
 last_updated: 2049-07-07
-featured_image: /assets/images/istockphoto-1335081545-612x612.jpg
+featured_image: /assets/images/asian-looking-at-monitor.jpg
 ---
 Every book has a skeleton hidden between its covers. Your job as an
 analytical reader is to find it.

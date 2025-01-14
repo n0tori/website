@@ -1,7 +1,6 @@
 /* Main */
 html, body {
     height: 100%;
-    margin: 0;
     scrollbar-gutter: stable;
 }
 
@@ -75,7 +74,7 @@ nav {
     color: #333;
 }
 
-.nav-link:active {
+.nav-link:hover {
     text-decoration: underline;
 }
 
@@ -106,7 +105,6 @@ nav {
     gap: 1rem;
     margin-top: 2rem;
     max-width: 100%;
-    overflow-x: auto;
 }
 
 .retro-badge {

@@ -6,7 +6,7 @@ tags:
     - philosophy
     - psychology
 last_updated: 2049-07-08
-featured_image: /assets/images/istockphoto-1335081545-612x612.jpg
+featured_image: /assets/images/asian-looking-at-monitor.jpg
 ---
 when high school enrollments increased greatly within a relatively short
 period, educators began to realize that it could no longer be assumed
