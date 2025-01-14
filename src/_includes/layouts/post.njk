@@ -2,19 +2,36 @@
 layout: layouts/base.njk
 ---
 <article class="post">
-    {% if featured_image %}
-    <img src="{{ featured_image }}" alt="{{ title }}" class="featured-image">
-    {% endif %}
-    
     <header class="post-header">
-        <h1 class="post-title">{{ title }}</h1>
+        {% if featured_image %}
+        <img src="{{ featured_image }}" alt="{{ title }}" class="featured-image">
+        {% endif %}
         
-        <div class="post-meta">
-            <span class="post-meta-item">Published: {{ page.date | readableDate }}</span>
-            {% if last_updated %}◆
-            <span class="post-meta-item">Last updated: {{ last_updated | readableDate }}</span>
-            {% endif %}◆
-            <span class="post-meta-item">{{ content | readingTime }} min read</span>
+        <div class="post-title-container">
+            <h1>{{ title }}</h1>
+            
+            <div class="post-meta">
+                <div class="meta-row">
+                    <span class="meta-icon">📅</span>
+                    <span>Published: {{ page.date | readableDate }}</span>
+                </div>
+                {% if last_updated %}
+                <div class="meta-row">
+                    <span class="meta-icon">🔄</span>
+                    <span>Last updated: {{ last_updated | readableDate }}</span>
+                </div>
+                {% endif %}
+                <div class="meta-row">
+                    <span class="meta-icon">⏱️</span>
+                    <span>{{ content | readingTime }} min read</span>
+                </div>
+                {% if tags %}
+                <div class="meta-row">
+                    <span class="meta-icon">🏷️</span>
+                    <span>{{ tags | join(", ") }}</span>
+                </div>
+                {% endif %}
+            </div>
         </div>
     </header>
     
