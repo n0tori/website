@@ -1,3 +1,17 @@
 <footer>
-    <p>© {{ site.name }} <span id="currentYear"></span> - <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <div class="footer-content">
+        <div class="retro-badges">
+            {% set sortedBadges = badges.badges | sort(attribute='order') %}
+            {% for badge in sortedBadges %}
+                {% if badge.link %}
+                    <a href="{{ badge.link }}" target="_blank" rel="noopener">
+                        <img src="{{ badge.image }}" alt="{{ badge.alt }}" class="retro-badge">
+                    </a>
+                {% else %}
+                    <img src="{{ badge.image }}" alt="{{ badge.alt }}" class="retro-badge">
+                {% endif %}
+            {% endfor %}
+        </div>
+        <p>© {{ site.name }} <span id="currentYear"></span> - <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    </div>
 </footer>

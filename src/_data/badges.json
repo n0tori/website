@@ -1,0 +1,50 @@
+{
+    "badges": [
+      {
+        "image": "/assets/retro-badges/powered.gif",
+        "alt": "static, the way it should be",
+        "order": 1
+      },
+      {
+        "image": "/assets/retro-badges/proweb_teal.gif",
+        "alt": "graphic-design-is-my-passion.css",
+        "order": 2
+      },
+      {
+        "image": "/assets/retro-badges/learncoding.gif",
+        "alt": "learn2code right guys",
+        "order": 3
+      },
+      {
+        "image": "/assets/retro-badges/adobe_getflash4.gif",
+        "alt": "good times",
+        "order": 4
+      },
+      {
+        "image": "/assets/retro-badges/newgrounds.gif",
+        "alt": "good times x2",
+        "order": 5
+      },
+      {
+        "image": "/assets/retro-badges/preserve.gif",
+        "order": 6
+      },
+      {
+        "image": "/assets/retro-badges/gutenberg2.gif",
+        "order": 7
+      },
+      {
+        "image": "/assets/retro-badges/half-lifegif",
+        "order": 8
+      },
+      {
+        "image": "/assets/retro-badges/roxasbox.gif",
+        "order": 9
+      },
+      {
+        "image": "/assets/retro-badges/blink-0.gif",
+        "order": 10
+      }
+    ]
+
+}
