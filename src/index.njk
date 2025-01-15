@@ -2,7 +2,23 @@
 layout: layouts/base.njk
 title: Home
 ---
-<section class="intro">
-    <h1>Welcome to my portfolio!</h1>
-    <p>{{ site.description }}</p>
-</section>
+<div class="index">
+    <div class="intro-text">
+        <p class="greeting">hi i'm aryan</p>
+        <p class="description">aspiring code monkey.</p>
+        <p class="emoticon">(:</p>
+        <p class="social-header">here are some socials:</p>
+        
+        <div class="social-icons">
+            <a href="{{ site.social.github }}" target="_blank" rel="noopener" title="GitHub">
+                <img src="/assets/images/github.ico" alt="GitHub">
+            </a>
+            <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener" title="LinkedIn">
+                <img src="/assets/images/linkedin.ico" alt="LinkedIn">
+            </a>
+            <a href="{{ site.social.lastfm }}" target="_blank" rel="noopener" title="Last.fm">
+                <img src="/assets/images/lastfm.ico" alt="Last.fm">
+            </a>
+        </div>
+    </div>
+</div>
