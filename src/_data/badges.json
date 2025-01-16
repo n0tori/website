@@ -38,12 +38,20 @@
         "order": 8
       },
       {
-        "image": "/assets/retro-badges/roxasbox.gif",
+        "image": "/assets/retro-badges/ff8.gif",
         "order": 9
       },
       {
-        "image": "/assets/retro-badges/blink-0.gif",
+        "image": "/assets/retro-badges/roxasbox.gif",
         "order": 10
+      },
+      {
+        "image": "/assets/retro-badges/kh.png",
+        "order": 11
+      },
+      {
+        "image": "/assets/retro-badges/blink-0.gif",
+        "order": 12
       }
     ]
 
