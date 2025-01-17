@@ -414,3 +414,14 @@ nav {
 .project-link:hover {
     text-decoration: underline;
 }
+
+.collectanea-links {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.collectanea-window {
+    padding-bottom: 2rem;
+}
