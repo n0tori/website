@@ -1,3 +1,13 @@
+/* Key color variables */
+:root {
+    --primary-blue: #1a4c6e;
+    --light-blue: #e6f3ff;
+    --accent-blue: #3384c3;
+    --neutral-light: #f5f7fa;
+    --neutral-dark: #2c3e50;
+    --border-color: #ccd7e0;
+}
+
 /* Main */
 html, body {
     height: 100%;
@@ -13,15 +23,15 @@ html, body {
 body {
     font-family: "Courier New", Courier, monospace;
     line-height: 1.6;
-    background: #fff;
-    color: #333;
+    background: var(--neutral-light);
+    color: var(--neutral-dark);
 }
 
 /* Layout */
 header {
-    background: #f0f0f0;
+    background: var(--primary-blue);
     padding: 1rem;
-    border-bottom: 2px solid #999;
+    border-bottom: none;
 }
 
 .wrapper {
@@ -40,8 +50,9 @@ main {
 footer {
     text-align: center;
     padding: 1rem;
-    background: #f0f0f0;
-    border-top: 2px solid #999;
+    background: var(--primary-blue);
+    color: white;
+    border-top: none;
     width: 100%;
     margin-top: auto;
 }
@@ -56,7 +67,7 @@ footer {
 }
 
 footer a {
-    color: inherit;
+    color: white;
     text-decoration: none;
 }
 
@@ -76,11 +87,12 @@ nav {
 .nav-links {
     display: flex;
     gap: 2rem;
+    color: white;
 }
 
 .nav-link {
     text-decoration: none;
-    color: #333;
+    color: white;
 }
 
 .nav-link:hover {
@@ -127,10 +139,10 @@ nav {
     max-width: 800px;
     margin: 2rem auto;
     padding: 2rem;
-    background: #f5f5f5;
-    border: 3px solid #333;
+    background: white;
+    border: 1px solid var(--border-color);
     border-radius: 10px;
-    box-shadow: 5px 5px 0 #999;
+    box-shadow: none;
 }
 
 .intro-text {
@@ -141,27 +153,27 @@ nav {
 
 .greeting {
     font-size: 2rem;
-    color: #333;
+    color: var(--primary-blue);
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 0 #ccc;
+    text-shadow: none;
 }
 
 .description {
     font-size: 1.5rem;
-    color: #444;
+    color: var(--neutral-dark);
     margin-bottom: 1rem;
 }
 
 .social-header {
     font-size: 1.3rem;
-    color: #333;
+    color: var(--neutral-dark);
     margin-bottom: 1rem;
 }
 
 /* Posts grid*/
 .explorer-window {
-    border: 2px solid #99B4D1;
-    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    background: white;
     margin: 20px auto;
     font-family: "Tahoma", sans-serif;
     max-width: 1000px;
@@ -181,7 +193,7 @@ nav {
 
 .explorer-toolbar {
     background: #F1EFE2;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid var(--border-color);
     padding: 8px 15px;
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr;
@@ -204,8 +216,8 @@ nav {
 }
 
 .file-item:hover {
-    background: #f5f5f5;
-    border-color: hotpink;
+    background: var(--light-blue);
+    border-color: var(--accent-blue);
 }
 
 .file-icon {
@@ -272,8 +284,8 @@ nav {
 
 .post-header {
     margin-bottom: 2rem;
-    border: 2px solid #99B4D1;
-    background: #F1EFE2;
+    border: 1px solid var(--border-color);
+    background: white;
     padding: 1.5rem;
     box-shadow: 3px 3px 7px rgba(0,0,0,0.1);
 }
