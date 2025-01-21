@@ -8,8 +8,9 @@ tags:
     - e-reader
     - networking
 last_updated: 0000-00-00
-featured_image: 
+featured_image: /assets/images/33240633.png
 ---
+
 # Table of contents
 
 ---
