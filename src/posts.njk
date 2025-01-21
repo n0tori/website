@@ -21,9 +21,6 @@ permalink: /posts/
             <div class="file-icon">
                 {% if post.data.featured_image %}
                 <img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}" class="file-thumbnail">
-                <div class="image-preview">
-                    <img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}">
-                </div>
                 {% endif %}
             </div>
             <a href="{{ post.url }}" class="file-name">{{ post.data.title }}</a>
