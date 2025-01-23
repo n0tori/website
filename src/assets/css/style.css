@@ -454,6 +454,7 @@ img {
 }
 
 .collectanea-links {
+    font-family: "Courier New", monospace;
     padding: 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

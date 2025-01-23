@@ -8,6 +8,8 @@
     },
     "dependencies": {
         "@11ty/eleventy": "^2.0.1",
+        "@vercel/analytics": "^1.4.1",
+        "@vercel/speed-insights": "^1.1.0",
         "luxon": "^3.5.0"
     },
     "main": ".eleventy.js",
