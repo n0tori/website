@@ -3,6 +3,15 @@ const path = require('path');
 const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
+    eleventyConfig.addShortcode("vercelAnalytics", function() {
+        return `
+          <script>
+            window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+          </script>
+          <script defer src="/_vercel/insights/script.js"></script>
+        `;
+    });
+    
     eleventyConfig.addPassthroughCopy("src/assets");
     
     eleventyConfig.addFilter("readableDate", (dateObj) => {
