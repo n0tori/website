@@ -1,17 +1,31 @@
 const fs = require('fs');
 const path = require('path');
 const { DateTime } = require("luxon");
+const markdownIt = require("markdown-it");
+
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/assets");
     
+    const mdOptions = {
+        html: true,
+        breaks: true,
+        linkify: true
+    };
+
+    const markdownLibrary = markdownIt(mdOptions);
+    eleventyConfig.setLibrary("md", markdownLibrary);
+
+
     eleventyConfig.addFilter("readableDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
     });
     
     eleventyConfig.addFilter("readingTime", (text) => {
         const wordsPerMinute = 200;
-        const numberOfWords = text.split(/\s/g).length;
+        // ignore codeblocks
+        const textWithoutCode = text.replace(/```[\s\S]*?```/g, '');
+        const numberOfWords = textWithoutCode.split(/\s/g).length;
         return Math.ceil(numberOfWords / wordsPerMinute);
     });
 

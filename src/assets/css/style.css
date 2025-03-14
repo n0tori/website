@@ -464,3 +464,21 @@ img {
 .collectanea-window {
     padding-bottom: 2rem;
 }
+
+/* Special Markdown rendering */
+blockquote {
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem;
+    border-left: 4px solid var(--border-color);
+    background-color: #f8f9fa;
+    font-style: italic;
+    color: #555;
+}
+
+blockquote p {
+    margin-bottom: 0.5rem;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
