@@ -1,14 +1,14 @@
 ---
-title: tba
-date: 0000-00-00
+title: Kindle Game Of Life
+date: 2025-03-14
 tags:
     - java
     - kindle
     - embedded devices
     - hacking
     - development
-last_updated: 0000-00-00
-featured_image: /assets/images/33240633.png
+last_updated: 2025-03-14
+featured_image: /assets/images/kindleGameOfLifePost/5.jpg
 ---
 # Introduction
 
@@ -89,7 +89,6 @@ if (Util.isKindle()) {
     ...
 }
 ```
-<br>
 
 Anyways... the ghosting and annoying visual flickers went away and it started looking like a decent app.
 
@@ -100,22 +99,22 @@ The most grueling part was some of the Swing components would not display correc
 To mitigate the memory problem, the grid updates by swapping references with each generation instead of copying the values of each individual cell, which helped.
 
 ```java
-    private void evolve() {
-        for (int x = 0; x < width; x++) {
-            for (int y = 0; y < height; y++) {
-                int neighbors = countNeighbors(x, y);
-                if (grid[x][y]) {
-                    nextGrid[x][y] = neighbors == 2 || neighbors == 3;
-                } else {
-                    nextGrid[x][y] = neighbors == 3;
-                }
+private void evolve() {
+    for (int x = 0; x < width; x++) {
+        for (int y = 0; y < height; y++) {
+            int neighbors = countNeighbors(x, y);
+            if (grid[x][y]) {
+                nextGrid[x][y] = neighbors == 2 || neighbors == 3;
+            } else {
+                nextGrid[x][y] = neighbors == 3;
             }
         }
-        
-        boolean[][] temp = grid;
-        grid = nextGrid;
-        nextGrid = temp;
     }
+    
+    boolean[][] temp = grid;
+    grid = nextGrid;
+    nextGrid = temp;
+}
 ```
 
 ## Working implementation
